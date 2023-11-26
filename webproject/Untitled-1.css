@@ -1,0 +1,136 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #bbb; /* Light gray text */
+    background-color: #333; /* Dark background */
+}
+
+/* Header Styles */
+#mainHeader {
+    background-color: #1a1a1a; /* Dark gray header */
+    color: #fff;
+    padding: 10px;
+}
+
+#mainHeader a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+/* Page Content Styles */
+#pageContent {
+    margin: 20px;
+}
+
+h1, h2, h3 {
+    color: #fff; /* White headings */
+}
+
+p {
+    color: #ccc; /* Slightly lighter gray text */
+}
+
+/* Biography Section Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+td {
+    padding: 20px;
+    vertical-align: top;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #666; /* Dark border */
+    border-radius: 5px;
+}
+
+/* Check Out Section Styles */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #1a1a1a; /* Dark gray button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #333; /* Slightly darker on hover */
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc; /* Lighter gray label */
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #666; /* Dark border */
+    border-radius: 5px;
+    background-color: #444; /* Dark background for input */
+    color: #ccc; /* Light gray text in input */
+}
+
+button {
+    background-color: #1a1a1a; /* Dark gray button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #333; /* Slightly darker on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a; /* Dark gray footer */
+    color: #fff;
+    padding: 10px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    #mainHeader {
+        text-align: center;
+    }
+
+    #mainHeader a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    table {
+        display: block;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
