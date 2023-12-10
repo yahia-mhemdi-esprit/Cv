@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Reach Out - Yahia</title>
         <link rel="stylesheet" href="Untitled-1.css">	
+        <script defer src="registration.js"></script>
+
     </head>
     <body>
         <header id="mainHeader">
@@ -43,8 +45,12 @@
                                 id="fname"
                                 name="fname"
                                 minlength="3"
+                                onkeyup="nameValidation()"  
+
                                 required
                             />
+                            <div id="nameError" style="color: red;"></div>
+
                         </td>
                     </tr>
                     <tr>
@@ -107,9 +113,11 @@
                             />
                         </td>
                     </tr>
+                 
+                   
                     <tr>
                         <td>
-                            <label for="pass">Hidden Message<span>*</span></label>
+                            <label for="pass">Password <span>*</span></label>
                         </td>
                         <td>
                             <input
@@ -122,15 +130,33 @@
                             />
                         </td>
                     </tr>
-                   
+                    <tr>
+                        <td>
+                            <label for="cpass"
+                                >Confirm Password <span>*</span></label
+                            >
+                        </td>
+                        <td>
+                            <input
+                                type="password"
+                                name="cpass"
+                                id="cpass"
+                                minlength="8"
+                                required
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            />
+                        </td>
+                    </tr>
+                    
 
                     <tr>
                         <td></td>
                         <td>
-                            <button type="submit">Submit</button>
+                            <button type="submit" id="submitButton" onclick="passValidation()" >Submit</button>
                             <button type="reset">Reset</button>
                         </td>
                     </tr>
+
                 </table>
             </form>
         </section>
